@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+
+body{
+    background-image: url("../img/samsung_galaxy.gif");
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.main{
+    width: 75%;
+    margin: 50px auto auto auto;
+
+    display:flex;
+}
+
+.main div{
+    float: left;
+    border: 1px white solid;
+    box-sizing: border-box;
+}
+
+.earth{
+    width: 60%;
+}
+
+.earth img{
+    width: 90%;
+    padding: 15px;
+}
+
+
+.desc{
+    width: 40%;
+}
+
+
+.desc h1{
+   margin-top: 20px;
+
+   font-size: 50px;
+}
+.desc p, h1{
+    margin: auto 10% auto 15px;
+    padding: 20px;
+}
+
+.desc p{
+    font-size: 20px;
+}
+
+.desc p::first-line{
+    color : yellow;
+}
+
+.desc table{
+    border-collapse: collapse;
+
+    width: 75%;
+    margin: 5% 10% 50px 7%;
+    
+    font-weight: bold;
+}
+
+.desc tr,td{
+    border: 2px white solid;
+    
+    font-size: 20px;
+    padding: 10px;
+}
+
+.desc a{
+    text-decoration: none;
+    color: white;
+}
+
+.desc td:hover{
+    background-color: blue;
+    transition: 0.5s;
+}
+
+.desc td:active{
+    background-color: purple;
+    transition: 0.5s;
+}
+
+.info{
+    width: 75%;
+    margin: auto;
+}
+
+.info div{
+    border: 1px white solid;
+    box-sizing: border-box;
+
+    width: 25%;
+    float: left;
+}
+
+.info p,h3{
+    padding-left: 10px;
+    text-align: center;
+}
+
+.info h3{
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1000px){
+    .info h3{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+
+    .main, .info{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
+    .earth, .desc, .info div{
+        width: 100%;
+    }
+
+    .earth img{
+        width: 90%;
+        margin:auto;
+    }
+
+    .desc{
+        text-align: center;
+    }
+
+    .desc h1{
+        font-size: 40px;
+    }
+
+    .desc table{
+        width: 50%;
+        margin: 15px auto 50px auto;
+    }
+}
+
+
+@media only screen and (max-width: 399px){
+    .desc h1{
+        font-size: 25px;
+    }
+
+    .desc p{
+        font-size: 13px;
+    }
+}
