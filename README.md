@@ -1,3 +1,3 @@
 https://tpsit-captain.000webhostapp.com/
 
-+ progetto_<NUMBER> as dir
++ progetto_NUMBER as dir
